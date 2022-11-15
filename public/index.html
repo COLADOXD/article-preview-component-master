@@ -5,13 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="../public/css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Article preview component</title>
   </head>
-  <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+  <body
+    class="bg-terceary h-screen px-9 py-32 font-Manrope xl:flex xl:justify-center xl:items-center"
+  >
+    <section
+      class="bg-cuarto rounded-xl xl:flex xl:max-h-[300px] xl:max-w-[900px]"
+    >
+      <div>
+        <img
+          class="rounded-t-xl w-auto xl:rounded-l-xl xl:rounded-tr-none xl:h-full"
+          src="../images/drawers.jpg"
+          alt=""
+        />
+      </div>
+      <div class="rounded-xl px-8 py-11 h-full">
+        <h1 class="font-bold text-2xl">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="mt-4 text-secondary font-normal">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. Ive got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="flex flex-row justify-between">
+          <div class="flex mt-4 flex-row justify-center items-center">
+            <img
+              class="rounded-full h-16"
+              src="../images/avatar-michelle.jpg"
+              alt=""
+            />
+            <div class="ml-5">
+              <p>Michelle Appleton</p>
+              <p class="text-terceary">24 Jun 2020 Share</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <img src="../images/icon-share.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <article></article>
   </body>
 </html>
